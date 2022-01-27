@@ -1,0 +1,81 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<img src="banner.jpg" width=100% height=30%>
+
+<div class="w3-bar w3-yellow">
+ <button class="w3-bar-item w3-button" onclick="openKota('Febi')">Profile</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Oppo')">Oppo</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Vivo')">Vivo</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Samsung')">Samsung</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Huawei')">Huawei</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Iphone')">Iphone</button>
+</div>
+
+<div id="Home" class="w3-container kota w3-animate-zoom" style="">
+ <center>
+ <h1>WELCOME</h1>
+ <img src="android.jpg" width=100% height=100%>
+</div>
+
+<div id="Febi" class="w3-container kota w3-animate-top" style="display:none">
+ <center>
+ <h2>Profile</h2>
+ <p>Nama : Febi Amelia</p>
+ <p>NIM : 10121082 </p>
+ <p>Kelas : IF2</p>
+ <img src="febi.jpg">
+</div>
+
+<div id="Oppo" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>OPPO F7 PRO 6GB-128GB</h2>
+ <p>Features	:	4G - LTE, 3G, Wifi, Bluetooth, GPS Navigation, Touchscreen, Memory Card Slots, e-mail, FM Radio, MP3, Video Player, Front Camera, Dual Sim Card, Acceleromater, Fingerprint Sensor</p>
+ <img src="oppo.jpg">
+</div>
+
+<div id="Vivo" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>Vivo Y12 64GB</h2>
+ <p>Vivo Y12 Smartphone hadir dengan ukuran layar 6,35 inci dan rasio layar 19,3:9 dengan desain Ultra All Screen. Bezel yang sangat tipis di seluruh sisi membuat rasio layar-ke-bodi mencapai hingga 89% sehingga memberikan tampilan unggulan. Kini, Anda dapat menikmati tampilan yang lebih luas, serta mudah dikendalikan hanya dengan satu tangan berkat adanya gesture control yang didesain khusus.</p>
+ <img src="vivo.jpg">
+</div>
+
+<div id="Samsung" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>Samsung Galaxy S21 FE Smartphone</h2>
+ <p>Features:	
+HDR support, Scratch-resistant glass (Corning Gorilla Glass Victus), Ambient light sensor, Proximity sensor</p>
+ <img src="samsung.jpg">
+</div>
+
+<div id="Huawei" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>HUAWEI P30 Pro</h2>
+ <p>Leica Quad Camera:
+40 MP (Wide Angle Lens, f/1.6 aperture,OIS) + 20 MP (Ultra Wide Angle Lens, f/2.2 aperture) + 8 MP (Telephoto, f/3.4 aperture,OIS)
+HUAWEI Time-of-Flight(TOF) Camera
+supports autofocus (phase focus, contrast focus), supports AIS (HUAWEI AI Image Stabilization).</p>
+ <img src="huawei.jpeg">
+</div>
+
+<div id="Iphone" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>Apple iPhone 11 128GB</h2>
+ <p>Camera & Video
+Dual 12MP cameras (Ultra Wide, Wide) with Portrait
+mode, Night mode, Auto Adjustments, next-
+generation Smart HDR and 4K video up to 60 fps
+with extended dynamic range</p>
+ <img src="iphone.png">
+</div>
+
+<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaKota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
